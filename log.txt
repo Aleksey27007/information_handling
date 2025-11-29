@@ -1,0 +1,15 @@
+2025-11-27 20:14:28 [main] INFO  com.app.information_handling.app_logger.AppLogger - Info message.
+2025-11-27 20:14:28 [main] WARN  com.app.information_handling.app_logger.AppLogger - Warning message.
+2025-11-27 20:14:28 [main] ERROR com.app.information_handling.app_logger.AppLogger - Error message.
+2025-11-27 20:14:28 [main] ERROR com.app.information_handling.app_logger.AppLogger - Fatal error.
+2025-11-27 20:14:28 [main] INFO  com.app.information_handling.app_logger.AppLogger - Info message.
+2025-11-27 20:30:03 [main] INFO  com.app.information_handling.app_logger.AppLogger - Info message.
+2025-11-27 20:30:03 [main] WARN  com.app.information_handling.app_logger.AppLogger - Warning message.
+2025-11-27 20:30:03 [main] ERROR com.app.information_handling.app_logger.AppLogger - Error message.
+2025-11-27 20:30:03 [main] ERROR com.app.information_handling.app_logger.AppLogger - Fatal error.
+2025-11-27 20:30:03 [main] INFO  com.app.information_handling.app_logger.AppLogger - Info message.
+2025-11-29 20:55:03 [main] INFO  com.app.information_handling.app_logger.AppLogger - Info message.
+2025-11-29 20:55:03 [main] WARN  com.app.information_handling.app_logger.AppLogger - Warning message.
+2025-11-29 20:55:03 [main] ERROR com.app.information_handling.app_logger.AppLogger - Error message.
+2025-11-29 20:55:03 [main] ERROR com.app.information_handling.app_logger.AppLogger - Fatal error.
+2025-11-29 20:55:03 [main] INFO  com.app.information_handling.app_logger.AppLogger - Info message.
