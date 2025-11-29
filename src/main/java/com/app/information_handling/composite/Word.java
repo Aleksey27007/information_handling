@@ -13,11 +13,6 @@ public class Word extends TextComponent{
     }
 
     @Override
-    public void add(TextComponent paragraph) {
-        symbols.add(paragraph);
-    }
-
-    @Override
     public String getText() {
         return word;
     }

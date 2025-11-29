@@ -13,11 +13,6 @@ public class Sentence extends TextComponent {
     }
 
     @Override
-    public void add(TextComponent paragraph) {
-        words.add(paragraph);
-    }
-
-    @Override
     public String getText() {
         return sentence;
     }

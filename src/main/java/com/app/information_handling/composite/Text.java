@@ -13,11 +13,6 @@ public class Text extends TextComponent{
     }
 
     @Override
-    public void add(TextComponent paragraph) {
-        paragraphs.add(paragraph);
-    }
-
-    @Override
     public String getText() {
         return text; // выводит весь текст
     }
