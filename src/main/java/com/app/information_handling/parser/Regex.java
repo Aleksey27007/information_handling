@@ -2,9 +2,9 @@ package com.app.information_handling.parser;
 
 public enum Regex {
     PARAGRAPH_REGEX("\\t"),
-    SENTENCE_REGEX("\\."),
+    SENTENCE_REGEX("\\.\\\\!\\?"),
     WORD_REGEX("\\ "),
-    SYMBOL_REGEX("");
+    SYMBOL_REGEX("\\D");
 
     final String regex;
 
