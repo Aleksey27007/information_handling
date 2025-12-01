@@ -1,4 +1,4 @@
-package com.app.information_handling.parser.file;
+package com.app.information_handling.parser;
 
 import java.util.List;
 
