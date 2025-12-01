@@ -16,7 +16,7 @@ public class IntoSymbolParserImpl implements FileParser {
     }
 
     public int getCountSymbol() {
-        return countSymbol;
+        return countSymbol + symbols.size() - 1;
     }
 
     public void setCountSymbol(int countSymbol) {
