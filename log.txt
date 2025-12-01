@@ -13,3 +13,15 @@
 2025-11-29 20:55:03 [main] ERROR com.app.information_handling.app_logger.AppLogger - Error message.
 2025-11-29 20:55:03 [main] ERROR com.app.information_handling.app_logger.AppLogger - Fatal error.
 2025-11-29 20:55:03 [main] INFO  com.app.information_handling.app_logger.AppLogger - Info message.
+2025-12-02 01:42:15 [main] INFO  com.app.information_handling.app_logger.AppLogger - Начало работы приложения
+2025-12-02 01:42:15 [main] INFO  com.app.information_handling.app_logger.AppLogger - Текст записан в файл text.txt
+2025-12-02 01:42:15 [main] INFO  com.app.information_handling.app_logger.AppLogger - Текст прочитан из файла
+2025-12-02 01:42:15 [main] INFO  com.app.information_handling.app_logger.AppLogger - Композитная структура текста собрана через сервис
+2025-12-02 01:42:15 [main] INFO  com.app.information_handling.app_logger.AppLogger - Количество параграфов: 4
+2025-12-02 01:42:15 [main] INFO  com.app.information_handling.app_logger.AppLogger - Работа приложения завершена
+2025-12-02 01:45:11 [main] INFO  com.app.information_handling.app_logger.AppLogger - Начало работы приложения
+2025-12-02 01:45:11 [main] INFO  com.app.information_handling.app_logger.AppLogger - Текст записан в файл text.txt
+2025-12-02 01:45:11 [main] INFO  com.app.information_handling.app_logger.AppLogger - Текст прочитан из файла
+2025-12-02 01:45:11 [main] INFO  com.app.information_handling.app_logger.AppLogger - Композитная структура текста собрана через сервис
+2025-12-02 01:45:11 [main] INFO  com.app.information_handling.app_logger.AppLogger - Количество параграфов: 4
+2025-12-02 01:45:11 [main] INFO  com.app.information_handling.app_logger.AppLogger - Работа приложения завершена

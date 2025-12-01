@@ -1,10 +1,11 @@
 package com.app.information_handling.parser;
 
 public enum Regex {
-    PARAGRAPH_REGEX("\\t"),
-    SENTENCE_REGEX("\\.\\\\!\\?"),
-    WORD_REGEX("\\ "),
-    SYMBOL_REGEX("\\D");
+    PARAGRAPH_REGEX("(?=\\n\\t)"),
+    LINE_REGEX("\\n"),
+    SENTENCE_REGEX("(?<=[.!?])\\s+"),
+    WORD_REGEX("\\s+"),
+    SYMBOL_REGEX("");
 
     final String regex;
 
