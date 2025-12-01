@@ -8,24 +8,15 @@ import java.nio.file.Path;
 
 public class AppReaderImpl implements AppReader {
 
-    private final Path baseDirectory;
-
-    public AppReaderImpl(Path baseDirectory) {
-        if (baseDirectory == null) {
-            throw new NullPointerException("baseDirectory must not be null");
-        }
-        this.baseDirectory = baseDirectory;
-    }
-
     @Override
-    public String fileRead(String fileName) {
-        if (fileName == null || fileName.isBlank()) {
-            throw new NullPointerException("fileName must not be null or blank");
+    public String fileRead(String fileName, String filePath) {
+        if (filePath.isBlank() || fileName.isBlank()) {
+            throw new NullPointerException("fileName or filePath must not be null or blank");
         }
-        Path absolutePath = baseDirectory.resolve(fileName);
         final String content;
+        String absolutePath = filePath + "\\" + fileName;
         try {
-            content = Files.readString(absolutePath);
+            content = Files.readString(Path.of(absolutePath));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
