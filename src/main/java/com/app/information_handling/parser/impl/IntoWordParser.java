@@ -32,10 +32,12 @@ public class IntoWordParser implements FileParser {
         this.words = words;
     }
 
+    @Override
     public FileParser getNextParser() {
         return nextParser;
     }
 
+    @Override
     public void setNextParser(FileParser nextParser) {
         this.nextParser = nextParser;
     }

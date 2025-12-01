@@ -7,12 +7,24 @@ import java.util.Arrays;
 import java.util.List;
 
 public class IntoSymbolParserImpl implements FileParser {
+    private FileParser nextParser;
     private int countSymbol;
     private List<String> symbols;
+    
     @Override
     public List<String> parse(String text) {
-        symbols = Arrays.stream(text.split(Regex.SYMBOL_REGEX.getRegex())).toList(); // делает с табуляциями
+        symbols = Arrays.stream(text.split(Regex.SYMBOL_REGEX.getRegex())).toList();
         return symbols;
+    }
+
+    @Override
+    public FileParser getNextParser() {
+        return nextParser;
+    }
+
+    @Override
+    public void setNextParser(FileParser nextParser) {
+        this.nextParser = nextParser;
     }
 
     public int getCountSymbol() {

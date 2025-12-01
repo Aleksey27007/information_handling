@@ -17,10 +17,12 @@ public class IntoParagraphParserImpl implements FileParser {
         return paragraphs;
     }
 
+    @Override
     public FileParser getNextParser() {
         return nextParser;
     }
 
+    @Override
     public void setNextParser(FileParser nextParser) {
         this.nextParser = nextParser;
     }
