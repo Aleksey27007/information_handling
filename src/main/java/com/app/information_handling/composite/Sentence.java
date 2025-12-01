@@ -1,36 +1,38 @@
 package com.app.information_handling.composite;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class Sentence extends TextComponent {
     private List<TextComponent> words = new ArrayList<>();
-    private String sentence;
 
-    public Sentence(String sentence) {
-        this.sentence = sentence;
+    public Sentence() {
     }
 
     @Override
     public String getText() {
-        return sentence;
-    }
-
-    public void setItemComponents() {
-        String[] result = sentence.split(" ");
-        for (int i = 0; i < result.length; i++) {
-            words.add(new Word(result[i]));
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < words.size(); i++) {
+            result.append(words.get(i).getText());
+            if (i < words.size() - 1) {
+                result.append(" ");
+            }
         }
+        return result.toString();
     }
-
+    
     @Override
-    public void print() {
-        setItemComponents();
-        Iterator<TextComponent> iterator = words.iterator();
-        words.stream()
-                .takeWhile(x -> iterator.hasNext())
-                .map(n -> iterator.next())
-                .forEach(TextComponent::print);
+    public void add(TextComponent component) {
+        words.add(component);
+    }
+    
+    @Override
+    public void remove(TextComponent component) {
+        words.remove(component);
+    }
+    
+    @Override
+    public List<TextComponent> getChildren() {
+        return new ArrayList<>(words);
     }
 }

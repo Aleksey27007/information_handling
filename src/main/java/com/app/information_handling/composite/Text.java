@@ -1,36 +1,38 @@
 package com.app.information_handling.composite;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
-public class Text extends TextComponent{
-    private List<TextComponent> paragraphs = new ArrayList<>(); // количество обзацев
-    private String text;
+public class Text extends TextComponent {
+    private List<TextComponent> paragraphs = new ArrayList<>();
 
-    public Text(String text) {
-        this.text = text;
+    public Text() {
     }
 
     @Override
     public String getText() {
-        return text; // выводит весь текст
-    }
-
-    public void setItemComponents() {
-        String[] result = text.split("\n");
-        for (int i = 0; i < result.length; i++) {
-            paragraphs.add(new Paragraph(result[i]));
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < paragraphs.size(); i++) {
+            result.append(paragraphs.get(i).getText());
+            if (i < paragraphs.size() - 1) {
+                result.append("\n");
+            }
         }
+        return result.toString();
     }
-
+    
     @Override
-    public void print() {
-        setItemComponents();
-        Iterator<TextComponent> iterator = paragraphs.iterator();
-        paragraphs.stream()
-                .takeWhile(x -> iterator.hasNext())
-                .map(n -> iterator.next())
-                .forEach(TextComponent::print);
+    public void add(TextComponent component) {
+        paragraphs.add(component);
+    }
+    
+    @Override
+    public void remove(TextComponent component) {
+        paragraphs.remove(component);
+    }
+    
+    @Override
+    public List<TextComponent> getChildren() {
+        return new ArrayList<>(paragraphs);
     }
 }
