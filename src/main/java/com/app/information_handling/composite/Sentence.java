@@ -32,4 +32,8 @@ public class Sentence extends TextComponent {
     public List<TextComponent> getChildren() {
         return new ArrayList<>(lexemes);
     }
+
+    public List<TextComponent> getLexemeList() {
+        return lexemes;
+    }
 }
