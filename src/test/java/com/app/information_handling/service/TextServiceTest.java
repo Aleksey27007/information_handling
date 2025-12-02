@@ -72,7 +72,7 @@ class TextServiceTest {
         String restored = textService.restoreText(parsed);
 
         assertNotNull(restored);
-        // basic sanity checks that some known fragments are present
+
         assertTrue(restored.contains("It has survived"));
         assertTrue(restored.contains("Bye."));
     }
