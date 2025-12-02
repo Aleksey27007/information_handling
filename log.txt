@@ -25,3 +25,73 @@
 2025-12-02 01:45:11 [main] INFO  com.app.information_handling.app_logger.AppLogger - Композитная структура текста собрана через сервис
 2025-12-02 01:45:11 [main] INFO  com.app.information_handling.app_logger.AppLogger - Количество параграфов: 4
 2025-12-02 01:45:11 [main] INFO  com.app.information_handling.app_logger.AppLogger - Работа приложения завершена
+2025-12-02 15:07:13 [main] INFO  com.app.information_handling.app_logger.AppLogger - Starting text parsing
+2025-12-02 15:07:13 [main] WARN  com.app.information_handling.app_logger.AppLogger - Text is empty or null
+2025-12-02 15:07:13 [main] INFO  com.app.information_handling.app_logger.AppLogger - Starting text parsing
+2025-12-02 15:07:13 [main] INFO  com.app.information_handling.app_logger.AppLogger - Parsers initialized
+2025-12-02 15:07:13 [main] INFO  com.app.information_handling.app_logger.AppLogger - Text successfully parsed into 4 paragraphs
+2025-12-02 15:07:13 [main] INFO  com.app.information_handling.app_logger.AppLogger - Starting text restoration
+2025-12-02 15:07:13 [main] INFO  com.app.information_handling.app_logger.AppLogger - Text successfully restored, length: 714 characters
+2025-12-02 15:07:13 [main] INFO  com.app.information_handling.app_logger.AppLogger - Starting text restoration
+2025-12-02 15:07:13 [main] WARN  com.app.information_handling.app_logger.AppLogger - Text is null, returning empty string
+2025-12-02 15:07:13 [main] INFO  com.app.information_handling.app_logger.AppLogger - Starting text parsing
+2025-12-02 15:07:13 [main] INFO  com.app.information_handling.app_logger.AppLogger - Parsers initialized
+2025-12-02 15:07:13 [main] INFO  com.app.information_handling.app_logger.AppLogger - Text successfully parsed into 4 paragraphs
+2025-12-02 15:07:13 [main] INFO  com.app.information_handling.app_logger.AppLogger - Starting text restoration
+2025-12-02 15:07:13 [main] INFO  com.app.information_handling.app_logger.AppLogger - Text successfully restored, length: 714 characters
+2025-12-02 15:07:13 [main] INFO  com.app.information_handling.app_logger.AppLogger - Starting text parsing
+2025-12-02 15:07:13 [main] WARN  com.app.information_handling.app_logger.AppLogger - Text is empty or null
+2025-12-02 15:07:13 [main] INFO  com.app.information_handling.app_logger.AppLogger - Starting text parsing
+2025-12-02 15:07:13 [main] INFO  com.app.information_handling.app_logger.AppLogger - Parsers initialized
+2025-12-02 15:07:13 [main] INFO  com.app.information_handling.app_logger.AppLogger - Text successfully parsed into 4 paragraphs
+2025-12-02 15:07:31 [main] INFO  com.app.information_handling.app_logger.AppLogger - Starting text parsing
+2025-12-02 15:07:31 [main] INFO  com.app.information_handling.app_logger.AppLogger - Parsers initialized
+2025-12-02 15:07:31 [main] INFO  com.app.information_handling.app_logger.AppLogger - Text successfully parsed into 4 paragraphs
+2025-12-02 15:07:31 [main] INFO  com.app.information_handling.app_logger.AppLogger - Sorting sentences by lexeme count
+2025-12-02 15:07:31 [main] INFO  com.app.information_handling.app_logger.AppLogger - Sentences sorted, total: 13
+2025-12-02 15:07:31 [main] INFO  com.app.information_handling.app_logger.AppLogger - Starting text parsing
+2025-12-02 15:07:31 [main] INFO  com.app.information_handling.app_logger.AppLogger - Parsers initialized
+2025-12-02 15:07:31 [main] INFO  com.app.information_handling.app_logger.AppLogger - Text successfully parsed into 4 paragraphs
+2025-12-02 15:07:31 [main] INFO  com.app.information_handling.app_logger.AppLogger - Calculating maximum sentence count sharing the same word
+2025-12-02 15:07:31 [main] INFO  com.app.information_handling.app_logger.AppLogger - Max sentence count with same word: 6
+2025-12-02 15:07:31 [main] INFO  com.app.information_handling.app_logger.AppLogger - Starting text parsing
+2025-12-02 15:07:31 [main] INFO  com.app.information_handling.app_logger.AppLogger - Parsers initialized
+2025-12-02 15:07:31 [main] INFO  com.app.information_handling.app_logger.AppLogger - Text successfully parsed into 4 paragraphs
+2025-12-02 15:07:31 [main] INFO  com.app.information_handling.app_logger.AppLogger - Starting text parsing
+2025-12-02 15:07:31 [main] INFO  com.app.information_handling.app_logger.AppLogger - Text successfully parsed into 4 paragraphs
+2025-12-02 15:07:31 [main] INFO  com.app.information_handling.app_logger.AppLogger - Swapping first and last lexeme in each sentence
+2025-12-02 15:07:31 [main] INFO  com.app.information_handling.app_logger.AppLogger - Swapping completed
+2025-12-02 15:09:25 [main] INFO  com.app.information_handling.app_logger.AppLogger - Starting text parsing
+2025-12-02 15:09:25 [main] INFO  com.app.information_handling.app_logger.AppLogger - Parsers initialized
+2025-12-02 15:09:25 [main] INFO  com.app.information_handling.app_logger.AppLogger - Text successfully parsed into 4 paragraphs
+2025-12-02 15:09:25 [main] INFO  com.app.information_handling.app_logger.AppLogger - Starting text parsing
+2025-12-02 15:09:25 [main] INFO  com.app.information_handling.app_logger.AppLogger - Text successfully parsed into 4 paragraphs
+2025-12-02 15:09:25 [main] INFO  com.app.information_handling.app_logger.AppLogger - Swapping first and last lexeme in each sentence
+2025-12-02 15:09:25 [main] INFO  com.app.information_handling.app_logger.AppLogger - Swapping completed
+2025-12-02 15:15:03 [main] INFO  com.app.information_handling.app_logger.AppLogger - Starting text parsing
+2025-12-02 15:15:03 [main] INFO  com.app.information_handling.app_logger.AppLogger - Parsers initialized
+2025-12-02 15:15:03 [main] INFO  com.app.information_handling.app_logger.AppLogger - Text successfully parsed into 4 paragraphs
+2025-12-02 15:15:03 [main] INFO  com.app.information_handling.app_logger.AppLogger - Starting text parsing
+2025-12-02 15:15:03 [main] INFO  com.app.information_handling.app_logger.AppLogger - Text successfully parsed into 4 paragraphs
+2025-12-02 15:15:03 [main] INFO  com.app.information_handling.app_logger.AppLogger - Swapping first and last lexeme in each sentence
+2025-12-02 15:15:03 [main] INFO  com.app.information_handling.app_logger.AppLogger - Swapping completed
+2025-12-02 15:15:03 [main] INFO  com.app.information_handling.app_logger.AppLogger - Starting text parsing
+2025-12-02 15:15:03 [main] INFO  com.app.information_handling.app_logger.AppLogger - Parsers initialized
+2025-12-02 15:15:03 [main] INFO  com.app.information_handling.app_logger.AppLogger - Text successfully parsed into 4 paragraphs
+2025-12-02 15:15:03 [main] INFO  com.app.information_handling.app_logger.AppLogger - Calculating maximum sentence count sharing the same word
+2025-12-02 15:15:03 [main] INFO  com.app.information_handling.app_logger.AppLogger - Max sentence count with same word: 6
+2025-12-02 15:15:03 [main] INFO  com.app.information_handling.app_logger.AppLogger - Starting text parsing
+2025-12-02 15:15:03 [main] INFO  com.app.information_handling.app_logger.AppLogger - Parsers initialized
+2025-12-02 15:15:03 [main] INFO  com.app.information_handling.app_logger.AppLogger - Text successfully parsed into 4 paragraphs
+2025-12-02 15:15:03 [main] INFO  com.app.information_handling.app_logger.AppLogger - Sorting sentences by lexeme count
+2025-12-02 15:15:03 [main] INFO  com.app.information_handling.app_logger.AppLogger - Sentences sorted, total: 13
+2025-12-02 15:16:34 [main] INFO  com.app.information_handling.app_logger.AppLogger - Starting text parsing
+2025-12-02 15:16:34 [main] INFO  com.app.information_handling.app_logger.AppLogger - Parsers initialized
+2025-12-02 15:16:34 [main] INFO  com.app.information_handling.app_logger.AppLogger - Text successfully parsed into 4 paragraphs
+2025-12-02 15:16:34 [main] INFO  com.app.information_handling.app_logger.AppLogger - Calculating maximum sentence count sharing the same word
+2025-12-02 15:16:34 [main] INFO  com.app.information_handling.app_logger.AppLogger - Max sentence count with same word: 6
+2025-12-02 15:17:12 [main] INFO  com.app.information_handling.app_logger.AppLogger - Starting text parsing
+2025-12-02 15:17:12 [main] INFO  com.app.information_handling.app_logger.AppLogger - Parsers initialized
+2025-12-02 15:17:12 [main] INFO  com.app.information_handling.app_logger.AppLogger - Text successfully parsed into 4 paragraphs
+2025-12-02 15:17:12 [main] INFO  com.app.information_handling.app_logger.AppLogger - Calculating maximum sentence count sharing the same word
+2025-12-02 15:17:12 [main] INFO  com.app.information_handling.app_logger.AppLogger - Max sentence count with same word: 6
