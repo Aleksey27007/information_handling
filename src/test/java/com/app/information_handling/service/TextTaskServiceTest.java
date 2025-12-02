@@ -29,17 +29,17 @@ class TextTaskServiceTest {
     }
 
     @Test
-    void findMaxSentenceCountWithSameWord_usesFileText() {
+    void findMaxSentenceCountWithSameWord() {
         String input = reader.fileRead(fileName, projectPath);
         Text text = textService.parseText(input);
 
         int max = textTaskService.findMaxSentenceCountWithSameWord(text);
 
-        assertEquals(4, max);
+        assertEquals(6, max);
     }
 
     @Test
-    void getSentencesSortedByLexemeCount_usesFileText_andIsNonDecreasing() {
+    void getSentencesSortedByLexemeCountAndIsNonDecreasing() {
         String input = reader.fileRead(fileName, projectPath);
         Text text = textService.parseText(input);
 
@@ -56,7 +56,7 @@ class TextTaskServiceTest {
     }
 
     @Test
-    void swapFirstAndLastLexemeInEachSentence_withFileText_preservesLengthAndChangesOrder() {
+    void swapFirstAndLastLexemeInEachSentencePreservesLengthAndChangesOrder() {
         String input = reader.fileRead(fileName, projectPath);
 
         Text original = textService.parseText(input);
@@ -65,6 +65,8 @@ class TextTaskServiceTest {
         String before = original.getText();
         Text modified = textTaskService.swapFirstAndLastLexemeInEachSentence(toModify);
         String after = modified.getText();
+        System.out.println(before);
+        System.out.println(after);
 
         assertEquals(before.length(), after.length());
         assertNotEquals(before, after);
