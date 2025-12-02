@@ -80,7 +80,7 @@ public class TextServiceImpl implements TextService {
         Text textComponent = new Text();
 
         for (String paragraphStr : paragraphs) {
-            if (paragraphStr != null && !paragraphStr.trim().isEmpty()) {
+            if (!paragraphStr.isBlank()) {
                 Paragraph paragraph = buildParagraph(paragraphStr, sentenceParser);
                 textComponent.add(paragraph);
             }
