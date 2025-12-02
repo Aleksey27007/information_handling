@@ -100,7 +100,8 @@ public class TextTaskServiceImpl implements TextTaskService {
         if (sentence == null) {
             return;
         }
-        List<TextComponent> children = sentence.getChildren();
+
+        List<TextComponent> children = sentence.getLexemeList();
         int firstIndex = -1;
         int lastIndex = -1;
 
