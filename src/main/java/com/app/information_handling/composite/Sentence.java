@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Sentence extends TextComponent {
-    private List<TextComponent> words = new ArrayList<>();
+    private List<TextComponent> lexemes = new ArrayList<>();
 
     public Sentence() {
     }
@@ -12,27 +12,24 @@ public class Sentence extends TextComponent {
     @Override
     public String getText() {
         StringBuilder result = new StringBuilder();
-        for (int i = 0; i < words.size(); i++) {
-            result.append(words.get(i).getText());
-            if (i < words.size() - 1) {
-                result.append(" ");
-            }
+        for (TextComponent lexeme : lexemes) {
+            result.append(lexeme.getText());
         }
         return result.toString();
     }
     
     @Override
     public void add(TextComponent component) {
-        words.add(component);
+        lexemes.add(component);
     }
     
     @Override
     public void remove(TextComponent component) {
-        words.remove(component);
+        lexemes.remove(component);
     }
     
     @Override
     public List<TextComponent> getChildren() {
-        return new ArrayList<>(words);
+        return new ArrayList<>(lexemes);
     }
 }
