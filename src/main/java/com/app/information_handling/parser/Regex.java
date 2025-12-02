@@ -4,6 +4,7 @@ public enum Regex {
     PARAGRAPH_REGEX("(?=\\n\\t)"),
     LINE_REGEX("\\n"),
     SENTENCE_REGEX("(?<=[.!?])\\s+"),
+    LEXEME_REGEX("\\s+"),
     WORD_REGEX("\\s+"),
     SYMBOL_REGEX("");
 
