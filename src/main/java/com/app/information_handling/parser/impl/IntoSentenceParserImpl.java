@@ -13,7 +13,7 @@ public class IntoSentenceParserImpl implements FileParser {
 
     @Override
     public List<String> parse(String text) {
-        sentences = Arrays.stream(text.split(Regex.SENTENCE_REGEX.getRegex())).toList(); // делает с табуляциями
+        sentences = Arrays.stream(text.split(Regex.SENTENCE_REGEX.getRegex())).toList();
         return sentences;
     }
 
