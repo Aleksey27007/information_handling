@@ -18,13 +18,13 @@ public class TextComposite implements TextComponent{
 
     @Override
     public void add(TextComponent textComponent) {
-        logger.debug("Adding component " + textComponent);
+        logger.info("Adding component " + textComponent);
         components.add(textComponent);
     }
 
     @Override
     public void remove(TextComponent textComponent) {
-        logger.debug("Component removed " + textComponent);
+        logger.info("Component removed " + textComponent);
         components.remove(textComponent);
     }
 
