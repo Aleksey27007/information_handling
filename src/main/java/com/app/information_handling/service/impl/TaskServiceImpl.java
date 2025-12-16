@@ -3,12 +3,16 @@ package com.app.information_handling.service.impl;
 import com.app.information_handling.composite.TextComponent;
 import com.app.information_handling.composite.TextComposite;
 import com.app.information_handling.service.TaskService;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.*;
 
 public class TaskServiceImpl implements TaskService {
+    private static final Logger logger = LogManager.getLogger();
     @Override
     public void swapFirstAndLastLexemes(TextComponent textComponent) {
+        logger.info("Start swapFirstAndLastLexemes");
         for (TextComponent paragraph : textComponent.getComponents()) {
 
             for (TextComponent sentenceComp : paragraph.getComponents()) {
@@ -28,6 +32,7 @@ public class TaskServiceImpl implements TaskService {
 
     @Override
     public int findMaxSentenceCountWithSameWords(TextComponent textComponent) {
+        logger.info("Start findMaxSentenceCountWithSameWords");
         if (!(textComponent instanceof TextComposite)) return 0;
 
         Map<String, Set<Integer>> wordToSentences = new HashMap<>();
@@ -66,6 +71,7 @@ public class TaskServiceImpl implements TaskService {
 
     @Override
     public List<String> sortSentencesByLexemeCount(TextComponent textComponent) {
+        logger.info("Start sortSentencesByLexemeCount");
         List<TextComponent> sentences = new ArrayList<>();
 
         for (TextComponent paragraph : textComponent.getComponents()) {
