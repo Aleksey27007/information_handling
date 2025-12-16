@@ -1,14 +1,15 @@
 package com.app.information_handling.composite;
 
+import com.app.information_handling.composite.TextComponent;
+import com.app.information_handling.composite.TextComponentType;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class TextComposite implements TextComponent{
+public class TextComposite implements TextComponent {
     private static final Logger logger = LogManager.getLogger();
-
     private final TextComponentType type;
     private final List<TextComponent> components = new ArrayList<>();
 
@@ -17,15 +18,15 @@ public class TextComposite implements TextComponent{
     }
 
     @Override
-    public void add(TextComponent textComponent) {
-        logger.info("Adding component " + textComponent);
-        components.add(textComponent);
+    public void add(TextComponent component) {
+        logger.debug("Adding component " + component);
+        components.add(component);
     }
 
     @Override
-    public void remove(TextComponent textComponent) {
-        logger.info("Component removed " + textComponent);
-        components.remove(textComponent);
+    public void remove(TextComponent component) {
+        logger.debug("Component removed " + component);
+        components.remove(component);
     }
 
     @Override
@@ -35,12 +36,12 @@ public class TextComposite implements TextComponent{
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
+        StringBuilder builder = new StringBuilder();
         for (TextComponent component : components) {
-            sb.append(component.toString());
-            if (type == TextComponentType.SENTENCE) sb.append(" ");
-            if (type == TextComponentType.PARAGRAPH) sb.append("\n");
+            builder.append(component.toString());
+            if (type == TextComponentType.SENTENCE) builder.append(" ");
+            if (type == TextComponentType.PARAGRAPH) builder.append("\n");
         }
-        return sb.toString().trim();
+        return builder.toString().trim();
     }
 }
