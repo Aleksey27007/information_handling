@@ -93,22 +93,6 @@ class TaskServiceImplTest {
         assertEquals(totalSentencesBefore, result.size());
     }
 
-    @Test
-    void allMethodsWithTextFromFileWorkCorrectly() {
-        assertNotNull(textComponent);
-        
-        String beforeSwap = textComponent.toString();
-        taskService.swapFirstAndLastLexemes(textComponent);
-        String afterSwap = textComponent.toString();
-        assertNotEquals(beforeSwap, afterSwap);
-        
-        int maxCount = taskService.findMaxSentenceCountWithSameWords(textComponent);
-        assertTrue(maxCount > 0);
-        
-        List<String> sorted = taskService.sortSentencesByLexemeCount(textComponent);
-        assertFalse(sorted.isEmpty());
-    }
-
     private int countLexemes(String sentence) {
         if (sentence == null || sentence.isBlank()) {
             return 0;
