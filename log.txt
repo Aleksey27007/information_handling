@@ -95,3 +95,31 @@
 2025-12-02 15:17:12 [main] INFO  com.app.information_handling.app_logger.AppLogger - Text successfully parsed into 4 paragraphs
 2025-12-02 15:17:12 [main] INFO  com.app.information_handling.app_logger.AppLogger - Calculating maximum sentence count sharing the same word
 2025-12-02 15:17:12 [main] INFO  com.app.information_handling.app_logger.AppLogger - Max sentence count with same word: 6
+2025-12-02 18:22:38 [main] INFO  com.app.information_handling.app_logger.AppLogger - Starting text parsing
+2025-12-02 18:22:38 [main] INFO  com.app.information_handling.app_logger.AppLogger - Parsers initialized
+2025-12-02 18:22:38 [main] INFO  com.app.information_handling.app_logger.AppLogger - Text successfully parsed into 4 paragraphs
+2025-12-02 18:22:38 [main] INFO  com.app.information_handling.app_logger.AppLogger - Starting text parsing
+2025-12-02 18:22:38 [main] INFO  com.app.information_handling.app_logger.AppLogger - Text successfully parsed into 4 paragraphs
+2025-12-02 18:22:38 [main] INFO  com.app.information_handling.app_logger.AppLogger - Swapping first and last lexeme in each sentence
+2025-12-02 18:22:38 [main] INFO  com.app.information_handling.app_logger.AppLogger - Swapping completed
+2025-12-02 18:28:53 [main] INFO  com.app.information_handling.app_logger.AppLogger - Starting text parsing
+2025-12-02 18:28:53 [main] INFO  com.app.information_handling.app_logger.AppLogger - Parsers initialized
+2025-12-02 18:28:53 [main] INFO  com.app.information_handling.app_logger.AppLogger - Text successfully parsed into 4 paragraphs
+2025-12-02 18:28:53 [main] INFO  com.app.information_handling.app_logger.AppLogger - Starting text parsing
+2025-12-02 18:28:53 [main] INFO  com.app.information_handling.app_logger.AppLogger - Text successfully parsed into 4 paragraphs
+2025-12-02 18:28:53 [main] INFO  com.app.information_handling.app_logger.AppLogger - Swapping first and last lexeme in each sentence
+2025-12-02 18:28:53 [main] INFO  com.app.information_handling.app_logger.AppLogger - Swapping completed
+2025-12-02 18:30:16 [main] INFO  com.app.information_handling.app_logger.AppLogger - Starting text parsing
+2025-12-02 18:30:16 [main] INFO  com.app.information_handling.app_logger.AppLogger - Parsers initialized
+2025-12-02 18:30:16 [main] INFO  com.app.information_handling.app_logger.AppLogger - Text successfully parsed into 4 paragraphs
+2025-12-02 18:30:16 [main] INFO  com.app.information_handling.app_logger.AppLogger - Starting text parsing
+2025-12-02 18:30:16 [main] INFO  com.app.information_handling.app_logger.AppLogger - Text successfully parsed into 4 paragraphs
+2025-12-02 18:30:16 [main] INFO  com.app.information_handling.app_logger.AppLogger - Swapping first and last lexeme in each sentence
+2025-12-02 18:30:16 [main] INFO  com.app.information_handling.app_logger.AppLogger - Swapping completed
+2025-12-02 18:32:25 [main] INFO  com.app.information_handling.app_logger.AppLogger - Starting text parsing
+2025-12-02 18:32:25 [main] INFO  com.app.information_handling.app_logger.AppLogger - Parsers initialized
+2025-12-02 18:32:26 [main] INFO  com.app.information_handling.app_logger.AppLogger - Text successfully parsed into 4 paragraphs
+2025-12-02 18:32:26 [main] INFO  com.app.information_handling.app_logger.AppLogger - Starting text parsing
+2025-12-02 18:32:26 [main] INFO  com.app.information_handling.app_logger.AppLogger - Text successfully parsed into 4 paragraphs
+2025-12-02 18:32:26 [main] INFO  com.app.information_handling.app_logger.AppLogger - Swapping first and last lexeme in each sentence
+2025-12-02 18:32:26 [main] INFO  com.app.information_handling.app_logger.AppLogger - Swapping completed
