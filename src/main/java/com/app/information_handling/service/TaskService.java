@@ -6,9 +6,9 @@ import java.util.List;
 
 public interface TaskService {
     //1 task
-    void swapFirstAndLastLexemes(TextComponent textComponent);
-    //2 task
     int findMaxSentenceCountWithSameWords(TextComponent textComponent);
-    //3 task
+    //2 task
     List<String> sortSentencesByLexemeCount(TextComponent textComponent);
+    //3 task
+    void swapFirstAndLastLexemes(TextComponent textComponent);
 }
