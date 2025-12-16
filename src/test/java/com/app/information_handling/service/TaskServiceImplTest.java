@@ -87,9 +87,9 @@ class TaskServiceImplTest {
     @Test
     void sortSentencesByLexemeCountWithValidTextPreservesAllSentences() {
         int totalSentencesBefore = countTotalSentences(textComponent);
-        
+
         List<String> result = taskService.sortSentencesByLexemeCount(textComponent);
-        
+
         assertEquals(totalSentencesBefore, result.size());
     }
 
@@ -120,7 +120,11 @@ class TaskServiceImplTest {
         if (textComponent == null) {
             return 0;
         }
-        return textComponent.count();
+        int count = 0;
+        for (TextComponent paragraph : textComponent.getComponents()) {
+            count += paragraph.count();
+        }
+        return count;
     }
 }
 
