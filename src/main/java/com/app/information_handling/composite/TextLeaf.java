@@ -1,7 +1,5 @@
 package com.app.information_handling.composite;
 
-import com.app.information_handling.composite.TextComponent;
-import com.app.information_handling.composite.TextComponentType;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -28,6 +26,11 @@ public class TextLeaf implements TextComponent {
     public void remove(TextComponent component) {
         logger.error("Leaf can't contain children");
         throw new UnsupportedOperationException("Leaf can't contain children");
+    }
+
+    @Override
+    public int count() {
+        return 1;
     }
 
     @Override

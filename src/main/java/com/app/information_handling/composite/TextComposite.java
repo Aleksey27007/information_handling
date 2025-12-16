@@ -1,7 +1,5 @@
 package com.app.information_handling.composite;
 
-import com.app.information_handling.composite.TextComponent;
-import com.app.information_handling.composite.TextComponentType;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -27,6 +25,11 @@ public class TextComposite implements TextComponent {
     public void remove(TextComponent component) {
         logger.debug("Component removed " + component);
         components.remove(component);
+    }
+
+    @Override
+    public int count() {
+        return components.size();
     }
 
     @Override
